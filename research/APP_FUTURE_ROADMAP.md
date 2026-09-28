@@ -1,7 +1,7 @@
 # ROBERT OS APP | Future Product & UX Research
 
-**Repo now:** `monkroe/Robert-OS`  
-**Proposed repo name:** `monkroe/robert-os-app` (rename not executed)  
+**Repo now:** `monkroe/robert-os-app`  
+**Former repo name:** `monkroe/Robert-OS` (renamed 2026-09-28)  
 **Path:** `research/APP_FUTURE_ROADMAP.md`  
 **OWNER:** Roberto  
 **Started:** 2026-09-28 (America/Chicago)  
@@ -131,7 +131,7 @@ Only after an explicit OWNER selection should a candidate move to an appropriate
 | APP-D03 | What is genuinely shared between PWA and Mini App, and what must adapt? | OPEN |
 | APP-D04 | How are pending, offline and stale financial figures displayed? | OPEN |
 | APP-D05 | What minimum design tokens and component vocabulary unify five tabs? | OPEN |
-| APP-D06 | Should the repo be renamed `robert-os-app`, and after which Pages/auth/link checks? | PROPOSED; not executed |
+| APP-D06 | Rename repository to `robert-os-app` | COMPLETED 2026-09-28; new Pages URL and local `origin` checked; full auth-flow test not established |
 | APP-D07 | When should the currently public repo become private, and what will that mean for Pages? | DEFERRED OWNER DIRECTION |
 
 ## 7. Reference map (pointers, not copies)
@@ -146,3 +146,4 @@ Only after an explicit OWNER selection should a candidate move to an appropriate
 
 - **2026-09-28 | OWNER DIRECTION:** establish a separate application brainstorming space for the PWA and Telegram Mini App; prefer `robert-os-app` as future lowercase repo name; consider private visibility later, without performing either change as part of research creation.
 - **2026-09-28 | INITIAL RESEARCH:** APP-01–APP-10 and APP-D01–APP-D07 seeded as product exploration, not as a new production roadmap or agent task queue.
+- **2026-09-28 | OWNER CONFIRMED:** GitHub repo renamed from `monkroe/Robert-OS` to `monkroe/robert-os-app`; Pages is live at `https://monkroe.github.io/robert-os-app/`, the app opens on the phone, and local Git `origin` is synchronized. Repo remains public; visibility change deferred. This record does not imply a complete auth-flow test.
