@@ -98,6 +98,16 @@ Scope boundary: Beno personality, conversation quality and long-term memory belo
 **Test condition:** real Samsung phone and both browser and Telegram host, when those hosts are actually available for testing.  
 **Status:** OPEN.
 
+### APP-11 | Modular dashboard blocks
+
+**Question:** how should the modular Robert OS domain architecture appear in the app without turning screens into disconnected widgets or duplicating business logic?  
+**Architecture source:** Hub research [XR-008 | Modulinė Robert OS domenų architektūra](https://github.com/monkroe/robert-os-hub/blob/main/research/ROBERT_OS_FUTURE_ROADMAP.md#xr-008--modulinė-robert-os-domenų-architektūra). APP-11 defines the app/UX expression of that research direction and does not replace or restate the Hub architecture.  
+**Ideas to explore:** compose screens from domain-backed blocks/cards; allow relevant blocks to be added, hidden, reordered or grouped within established Cockpit / Runway / Vault / Goals / Audit zones; let multiple surfaces render the same domain result while keeping calculations in the domain layer; expose freshness, provenance, loading and error state consistently.  
+**SUPPLIED proof-of-concept:** the local Kamino JUP/SOL dashboard showed that one domain can expose several useful views such as Position, Capital Recovery, Assets, Income, Yield, Liquidity Range and Entry History while relying on one underlying set of calculations and sources. Treat this as UX evidence, not as an accepted production component model.  
+**Boundary:** app blocks are presentation surfaces, not independent data authorities. They must not reimplement domain formulas, create a second ledger or bypass the canonical write path. Cross-domain behavior and contracts remain owned by Hub XR-008 and any later accepted ADR/spec.  
+**Test:** prototype with synthetic data on the Samsung phone; compare fixed screens versus configurable blocks for comprehension, density, navigation cost and error/freshness clarity.  
+**Status:** OWNER DIRECTION FOR RESEARCH / OPEN UX. No implementation, component framework or layout is approved by this entry.
+
 ## 4. Idea card: append rather than turn into a task by default
 
 ```text
@@ -147,3 +157,4 @@ Only after an explicit OWNER selection should a candidate move to an appropriate
 - **2026-09-28 | OWNER DIRECTION:** establish a separate application brainstorming space for the PWA and Telegram Mini App; prefer `robert-os-app` as future lowercase repo name; consider private visibility later, without performing either change as part of research creation.
 - **2026-09-28 | INITIAL RESEARCH:** APP-01–APP-10 and APP-D01–APP-D07 seeded as product exploration, not as a new production roadmap or agent task queue.
 - **2026-09-28 | OWNER CONFIRMED:** GitHub repo renamed from `monkroe/Robert-OS` to `monkroe/robert-os-app`; Pages is live at `https://monkroe.github.io/robert-os-app/`, the app opens on the phone, and local Git `origin` is synchronized. Repo remains public; visibility change deferred. This record does not imply a complete auth-flow test.
+- **2026-10-05 | OWNER DIRECTION FOR RESEARCH:** added APP-11 modular dashboard blocks as the app/UX counterpart to Hub XR-008, with an explicit cross-reference and no duplication of architecture authority.
